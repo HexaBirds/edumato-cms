@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "like_favs",
+  "info": {
+    "singularName": "like-fav",
+    "pluralName": "like-favs",
+    "displayName": "like",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user-detail.user-detail",
+      "inversedBy": "likes"
+    }
+  }
+}

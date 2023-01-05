@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "text"
+    },
+    "class": {
+      "type": "string"
+    },
+    "seet": {
+      "type": "integer"
+    },
+    "user_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-detail.user-detail"
+    },
+    "user_id": {
+      "type": "string"
+    }
+  }
+}
