@@ -78,7 +78,13 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::like-fav.like-fav",
-      "mappedBy": "user"
+      "mappedBy": "user_detail"
+    },
+    "favorites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::favorite.favorite",
+      "mappedBy": "user_detail"
     }
   }
 }

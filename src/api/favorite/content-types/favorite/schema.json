@@ -20,6 +20,12 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "favorites"
+    },
+    "user_detail": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user-detail.user-detail",
+      "inversedBy": "favorites"
     }
   }
 }
