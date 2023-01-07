@@ -26,8 +26,10 @@
       "relation": "oneToOne",
       "target": "api::user-detail.user-detail"
     },
-    "user_id": {
-      "type": "string"
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

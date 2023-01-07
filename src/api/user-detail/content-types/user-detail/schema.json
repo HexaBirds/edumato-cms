@@ -60,10 +60,6 @@
       "type": "boolean",
       "default": false
     },
-    "user_id": {
-      "type": "string",
-      "required": true
-    },
     "showDetail": {
       "type": "boolean",
       "default": false
@@ -74,16 +70,22 @@
       "target": "api::subject.subject",
       "mappedBy": "user_details"
     },
-    "likes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::like-fav.like-fav",
-      "mappedBy": "user_detail"
-    },
     "favorites": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::favorite.favorite",
+      "mappedBy": "user_detail"
+    },
+    "like": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::like-fav.like-fav",
+      "inversedBy": "user_details"
+    },
+    "user_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
       "mappedBy": "user_detail"
     }
   }

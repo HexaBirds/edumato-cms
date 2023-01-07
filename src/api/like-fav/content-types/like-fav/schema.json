@@ -12,14 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user_id": {
-      "type": "string"
-    },
-    "user_detail": {
+    "user_details": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::user-detail.user-detail",
-      "inversedBy": "likes"
+      "mappedBy": "like"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "like"
     }
   }
 }

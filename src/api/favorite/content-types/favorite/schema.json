@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user_id": {
-      "type": "string"
-    },
     "users": {
       "type": "relation",
       "relation": "manyToOne",

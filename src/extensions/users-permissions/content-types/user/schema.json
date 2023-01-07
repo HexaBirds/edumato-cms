@@ -88,6 +88,18 @@
       "relation": "oneToMany",
       "target": "api::favorite.favorite",
       "mappedBy": "users"
+    },
+    "like": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::like-fav.like-fav",
+      "inversedBy": "users"
+    },
+    "user_detail": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user-detail.user-detail",
+      "inversedBy": "user_id"
     }
   }
 }
