@@ -100,6 +100,12 @@
       "relation": "manyToOne",
       "target": "api::user-detail.user-detail",
       "inversedBy": "user_id"
+    },
+    "comment_reviews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::comment-review.comment-review",
+      "mappedBy": "users"
     }
   }
 }

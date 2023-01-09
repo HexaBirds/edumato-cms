@@ -87,6 +87,12 @@
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
       "mappedBy": "user_detail"
+    },
+    "comment_reviews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::comment-review.comment-review",
+      "mappedBy": "user_details"
     }
   }
 }

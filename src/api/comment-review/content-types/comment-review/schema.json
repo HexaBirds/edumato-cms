@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comment_reviews",
+  "info": {
+    "singularName": "comment-review",
+    "pluralName": "comment-reviews",
+    "displayName": "comment-review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "comment_reviews"
+    },
+    "user_details": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::user-detail.user-detail",
+      "inversedBy": "comment_reviews"
+    }
+  }
+}
