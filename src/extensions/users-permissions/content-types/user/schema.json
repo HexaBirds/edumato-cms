@@ -89,12 +89,6 @@
       "target": "api::favorite.favorite",
       "mappedBy": "users"
     },
-    "like": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::like-fav.like-fav",
-      "inversedBy": "users"
-    },
     "user_detail": {
       "type": "relation",
       "relation": "manyToOne",
@@ -106,6 +100,12 @@
       "relation": "manyToMany",
       "target": "api::comment-review.comment-review",
       "mappedBy": "users"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like-fav.like-fav",
+      "mappedBy": "user"
     }
   }
 }
