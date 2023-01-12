@@ -93,6 +93,10 @@
       "relation": "oneToMany",
       "target": "api::like-fav.like-fav",
       "mappedBy": "user_detail"
+    },
+    "isPaid": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
