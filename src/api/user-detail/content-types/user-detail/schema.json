@@ -97,6 +97,12 @@
     "isPaid": {
       "type": "boolean",
       "default": false
+    },
+    "request": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::request.request",
+      "inversedBy": "user_details"
     }
   }
 }
