@@ -4,7 +4,8 @@
   "info": {
     "singularName": "subject",
     "pluralName": "subjects",
-    "displayName": "subject"
+    "displayName": "services",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,17 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "text"
     },
     "user_details": {
       "type": "relation",
