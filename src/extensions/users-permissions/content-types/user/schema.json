@@ -67,19 +67,6 @@
       "type": "string",
       "required": true
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "student",
-        "institute",
-        "school",
-        "library",
-        "company",
-        "pg",
-        "individual"
-      ],
-      "default": "student"
-    },
     "name": {
       "type": "string"
     },
@@ -112,6 +99,12 @@
       "relation": "manyToMany",
       "target": "api::request.request",
       "mappedBy": "users"
+    },
+    "user_details_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user-details-type.user-details-type",
+      "inversedBy": "users"
     }
   }
 }

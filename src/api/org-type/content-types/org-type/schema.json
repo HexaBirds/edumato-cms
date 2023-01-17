@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "org_types",
+  "info": {
+    "singularName": "org-type",
+    "pluralName": "org-types",
+    "displayName": "orgType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "user_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-detail.user-detail",
+      "mappedBy": "org_type"
+    }
+  }
+}

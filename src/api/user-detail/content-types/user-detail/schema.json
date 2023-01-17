@@ -104,14 +104,11 @@
       "target": "api::request.request",
       "inversedBy": "user_details"
     },
-    "orgType": {
-      "type": "enumeration",
-      "enum": [
-        "HBSE",
-        "CBSE",
-        "ICSE",
-        "Play School"
-      ]
+    "org_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::org-type.org-type",
+      "inversedBy": "user_details"
     }
   }
 }
