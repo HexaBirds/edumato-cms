@@ -109,6 +109,9 @@
       "relation": "manyToOne",
       "target": "api::org-type.org-type",
       "inversedBy": "user_details"
+    },
+    "rank": {
+      "type": "integer"
     }
   }
 }
