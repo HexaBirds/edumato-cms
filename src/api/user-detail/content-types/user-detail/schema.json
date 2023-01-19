@@ -112,6 +112,9 @@
     },
     "rank": {
       "type": "integer"
+    },
+    "user_type": {
+      "type": "string"
     }
   }
 }
