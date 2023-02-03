@@ -105,6 +105,10 @@
       "relation": "manyToOne",
       "target": "api::user-details-type.user-details-type",
       "inversedBy": "users"
+    },
+    "isAdmin": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
