@@ -115,6 +115,14 @@
     },
     "user_type": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Government",
+        "Private"
+      ],
+      "default": "Private"
     }
   }
 }
