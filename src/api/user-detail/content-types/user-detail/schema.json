@@ -123,6 +123,14 @@
         "Private"
       ],
       "default": "Private"
+    },
+    "extraFav": {
+      "type": "integer",
+      "default": 0
+    },
+    "extralike": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
